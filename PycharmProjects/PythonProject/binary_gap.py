@@ -50,7 +50,7 @@ def gap(n):
 print(gap(9))
 
 def binary_number(n):
-    #using the split method.
+    #usinggit push -u origin main the split method.
     n= bin(n)[2:]
     binary_gap =n.strip('0').split('1')[1:]
     return max(map(len, binary_gap), default=0)
