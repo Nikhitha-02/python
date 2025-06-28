@@ -32,3 +32,12 @@ def twoSum(n,target):
 
 n = [3,2,4]
 print(twoSum(n,6))
+
+def two_sum(n,target):
+    d={}
+    for i in range(len(n)):
+        number = abs(target - n[i])
+        if number in d:
+            return [d[number],i]
+        d[n[i]] = i
+print(two_sum([2, 7, 11, 15], 9))
